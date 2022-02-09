@@ -1,0 +1,82 @@
+/*----------------LAYOUT----------------*/
+
+body
+{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height: 1.5;
+	color: #333;
+	margin:auto;
+	padding:0px;
+	width:1200px;
+	border:solid pink;
+}
+
+#blocPage
+{
+	background-color:rgba(230,230,230,0.9);
+
+}
+
+
+img
+{
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+section /*le flex s'applique a tous les éléments immédiatement inférieur, (mais pas leurs enfants obviously)*/
+{
+	justify-content: space-around;
+	align-items: center; 
+	display:flex;
+	flex-direction: row;
+	flex-flow:row wrap;
+}
+
+.Post
+{
+	position: relative;
+	margin: 5px;
+	border:solid black;
+	width: 380px;			/*set la largeur de chaque div article à 32% de la largeur de la div parent (blocPage)*/
+	height: 220px;			/*set la hauteur de chaque div article a 24% de la vue du browser*/
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.postTitle
+{
+	margin:auto;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%); /*ca permet le retrait des margins (sinon ca centre la top margin*/
+	width: 100%;
+	font-size:40px;
+	text-align: center;
+	display:none;
+}
+
+.Post:hover
+{
+	border: solid pink;	/*change la couleur de la bordure de l'article en rose quand hover*/
+}
+
+.Post:hover .postImg
+{
+	opacity:0.3;
+}
+.Post:hover .postTitle
+{
+	display:block;
+	z-index:999;
+}
+.postImg
+{
+/*	width: 100%;			/*set la largeur de chaque div article à 32% de la largeur de la div parent (blocPage)*/
+	max-height: 100%;
+}
+

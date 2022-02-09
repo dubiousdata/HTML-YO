@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../../Posts.css" />
+		<html lang="fr">
+		<title>ART3</title>
+	</head>
+
+	<body>
+		<a name="top"></a>
+		<div id="blocPage">
+			<h1>Andariel Counter :</h1>
+			<p>1</p>
+			<h3>MF :</h3>
+				<ul>
+					<li>Head : 72</li>
+					<li>Weapon : 0</li>
+					<li>Off-Hand : 0</li>
+					<li>Armor : 0</li>
+					<li>Gloves : 26</li>
+					<li>Belt : 0</li>
+					<li>Boots : 33</li>
+					<li>Amulet : 30</li>
+					<li>Ring : 21</li>
+					<li>Ring : 13</li>
+					<li>Charms : 7</li>
+				</ul>
+			<p>Total : 202</p>
+			<h3>Notable Drops :</h3>
+			 <ul>
+				<li></li>
+<!--			<li></li>
+				<li></li>
+-->			</ul> 
+
+		</div>
+	</body>
+	
+</html>

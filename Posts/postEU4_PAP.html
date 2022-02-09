@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+	<head>
+
+<!--		<link rel="stylesheet" href="BaseCSS.css" /> -->
+
+		<title>Diapo</title>
+		
+		<style>
+			#carousel{
+				position:absolute;
+				width:800px;
+				height:400px;
+				top:100px;
+				left:100px;
+<!--				display: hidden;-->
+			}
+		</style>
+		
+		<script>
+			var slides = [
+				"<div id ='slide1'>1446<br><img src='eu4_map_PAP_1446_01_01_1.png'></div>",
+<!--				"<div id ='slide2'>"1466"<br><img src='eu4_map_PAP_1466_01_01_1.png'></div>",
+<!--				"<div id ='slide3'>1486<br><img src='eu4_map_PAP_1486_01_24_1.png'></div>",
+<!--				"<div id ='slide4'>1506<br><img src='eu4_map_PAP_1506_05_04_1.png'></div>",
+<!--				"<div id ='slide5'>1528<br><img src='eu4_map_PAP_1528_01_02_1.png'></div>",
+<!--				"<div id ='slide6'>1546<br><img src='eu4_map_PAP_1546_01_03_1.png'></div>",
+<!--				"<div id ='slide7'>1565<br><img src='eu4_map_PAP_1565_01_22_1.png'></div>",
+				"<div id ='slide8'>"1577"<br><img src='eu4_map_PAP_1577_01_09_1.png'></div>"];
+			var currentSlide=0;
+			var numberOfSlides=slides.length-1;
+			window.addEventListener("load",loader,false);
+			
+			function loader(){
+				changeImage();
+			}
+			
+			function changeImage(){
+				console.log("Fonction changeImage");
+				if (currentSlide>numberOfSlides){
+					currentSlide=0;
+				}
+			document.getElementById("carousel").innerHTML=slides[current-Slide];
+			console.log('affichage de la photo' + currentSlide + ' sur ' + numberOfSlides);
+			currentSlide++;
+			setTimeout(changeImage,1000);
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div id="carousel"></div>
+	</body>
+	
+</html>
