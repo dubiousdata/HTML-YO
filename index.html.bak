@@ -27,6 +27,11 @@
 <!--==============================SECTION ARTICLE===============================-->		
 			<section>
 			
+				<article class="Post" Title="Article3" style="cursor: pointer;" onclick="window.location='Posts/Article3/Article3.html';">		
+						<h3 class="postTitle"> Andariel counter </h3>
+						<img  class="postImg" src="Posts/Article3/PostCover.png"/>
+				</article>	
+				
 				<article class="Post" Title="Article2" style="cursor: pointer;" onclick="window.location='Posts/Article2/Article2.html';">		
 						<h3 class="postTitle"> The Victorian Three </h3>
 						<img  class="postImg" src="Posts/Article2/PostCover.png"/>
